@@ -1,0 +1,10 @@
+let score  = "33abc"
+console.log (typeof (score))
+let Numberscore = Number(score)
+console.log(Numberscore)//NaN=> Not a number 
+console.log (typeof (Numberscore))// type 33abc woh number aa rha hai 
+let somenumber = "Null"
+let Isloggedin = undefined
+let BooleanIsloggedin = Boolean(Isloggedin)
+//console.log (BooleanIsloggedin);
+/* conversion of number in boolean is true => 1; false => 0; hitesh=> true; undefined => false*/
