@@ -23,12 +23,12 @@ function addTwoNumbers(num1, num2){
 //const result = addTwoNumbers(3, 5);
 //console.log(result);
 
-function loginUserMessage(username = "sam"){
+function loginUserMessage(username = "sam") {
     if(!username){//if username is not provided, it will be undefined, which is false
         console.log("PLease enter a username");
         return// this will stop the execution of the function and return undefined
     return (`${username} just logged in`)//string interpolation
 }
 
-console.log(loginUserMessage("hitesh"))
-console.log(loginUserMessage(null))
+//console.log(loginUserMessage("hitesh"))
+//console.log(loginUserMessage("hitesh"))
