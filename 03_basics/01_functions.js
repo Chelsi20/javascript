@@ -29,6 +29,40 @@ function loginUserMessage(username = "sam") {
         return// this will stop the execution of the function and return undefined
     return (`${username} just logged in`)//string interpolation
 }
+}
+//console.log(loginUserMessage("hitesh"))
+//console.log(loginUserMessage("hitesh"))
 
-//console.log(loginUserMessage("hitesh"))
-//console.log(loginUserMessage("hitesh"))
+function cartPriceCounter(...num1) { // rest operator ; rest operator packages all the 
+    return num1 // given argument in a array 
+}
+    //console.log(cartPriceCounter(100,200,300))
+
+function cartPriceCounter(val_1,val_2,...num1) { // rest operator ; rest operator packages all the 
+    return {val_1,val_2,num1} // given argument in a array     
+}
+    console.log(cartPriceCounter(100,200,300,400,600))
+    //output is: { val_1: 100, val_2: 200, num1: [ 300, 400, 600 ] }
+    
+
+const user = {
+    username : "hitesh",
+    price: 199
+}
+ function handleObject (anyobject){
+    console.log(`Username is ${anyobject.username} and the price is ${anyobject.price}`)
+
+ }
+ //handleObject(user)
+ handleObject({
+    username:"sam",
+    price: 399
+ })
+
+ const myArray = [100,200,400,600]
+
+ function returnValueSecond(getArray){
+    return getArray[1]
+ }
+ //console.log(returnValueSecond(myArray));
+ console.log(returnValueSecond([200,400,500,600]));
